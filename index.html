@@ -552,6 +552,31 @@
       .home-life-grid { height: auto; gap: 14px; }
       .home-life-card { height: 360px; min-height: 0; }
       .feature-copy, .feature-media { padding: 16px; border-radius: 18px; }
+      #story-right {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      #story-right .feature-media,
+      #story-right .feature-copy {
+        width: 100%;
+        min-width: 0;
+      }
+      #story-right .honors-inline {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px !important;
+        width: 100%;
+      }
+      #story-right .honor-card,
+      #story-right .honor-card img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 5 / 4;
+        object-fit: cover;
+      }
       .portfolio-section { gap: 14px; }
       .portfolio-panel1 { min-height: 280px; }
       .portfolio-viewer { min-height: 260px; }
